@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db-blender:
+    build: .
+    volumes:
+      - ./input:/input
+      - ./export:/export
+    environment:
+      - NODE_ENV=production
+    # Example configurations (commented out by default)
+    # command: >
+    #   npm start
+    #   --from-encoding=latin1
+    #   --to-encoding=utf8mb4
+    #   --strip-prefix=old_prefix_
+    #   --merge-sql
+    #   --output-format=mysql
+
+  # Example with different configuration
+  # db-blender-csv:
+  #   build: .
+  #   volumes:
+  #     - ./input:/input
+  #     - ./export:/export
+  #   environment:
+  #     - NODE_ENV=production
+  #   command: npm start --output-format=csv
