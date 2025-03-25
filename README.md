@@ -1,4 +1,4 @@
-# DB Blender
+# DB Blender - A rapid code experiment. 
 
 A Docker-based tool for converting and modernizing database dumps between different formats and encodings.
 
